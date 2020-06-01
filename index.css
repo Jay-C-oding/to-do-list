@@ -1,0 +1,91 @@
+/* global */
+:root{
+    --colour-white: #ffffff;
+    --colour-beige: #DFC7C1;
+    --colour-pink: #F4DCD6;
+    --colour-lightblue: #B2D9EA;
+    --colour-blue: #82B4C8;
+    --colour-deepgreen: #619196;
+
+    --font-large: 70px;
+    --font-regular: 28px;
+    --font-quote: 24px;
+
+    /*font-family: 'Anton', sans-serif;
+    font-family: 'Slabo 27px', serif;*/
+}
+
+html {
+    background: url('img/background.jpg') no-repeat center fixed;
+ margin: 0;
+    background-size: cover;
+}
+
+#productivity{
+    position: sticky;
+    width: 20%;
+    text-align: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+    opacity: 40%;
+}
+#productivity_todo{
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    font-size: var(--font-regular);
+    font-family: 'Slabo 27px', serif;
+    color: white;
+}
+#productivity_pomodoro{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    font-size: var(--font-regular);
+    font-family: 'Slabo 27px', serif;
+    color: white;
+}
+
+.title{
+    font-size: var(--font-large);
+    color: white;
+    text-align: center;
+    font-family: 'anton', sans-serif ;
+    padding: 20px;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    opacity: 80%;
+}
+#getToday{
+    font-size: var(--font-regular);
+    font-family: 'Slabo 27px', serif;
+    color: white;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+}
+#quote{
+    color: white;
+    font-size: var(--font-quote);
+    text-align: center;
+    vertical-align: bottom;
+    font-family: 'Slabo 27px', serif;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+#main_weather{
+    font-size: var(--font-regular);
+    font-family: 'Slabo 27px', serif;
+    color: white;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding: 20px;
+}
