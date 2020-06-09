@@ -8,34 +8,54 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My to do</title>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Slabo+27px&display=swap" rel="stylesheet">
+    <link href="font-awesome.css" rel="stylesheet" >
+    <link href="font-awesome.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 </head>
-<body onload="startTime()">
+<body onload="startTime()" >
+<header>
+    <section id="quote">
+        <h3>Fair Weather Doesn't Make a Skillful Sailor</h3>
+    </section>
+    <p id="main_weather">T:<span id="temperature"></span>
+        H:<span id="humidity"></span>
+    </p>
+</header>
 <div>
 <section id="productivity">
     <div class="box"></div>
     <div id="productivity_todo">
-        <h3>To Do</h3>
+        <h3 class="todo-title">To Do</h3>
+        <form class="todo-form">
+            <input class="todo-input"/>
+            <button class="todo_btn" type="submit">ADD</button>
+        </form>
+        <div class="todoContainer">
+            <ul class="todoList">
+
+            </ul>
+        </div>
+
     </div>
     <div id="productivity_pomodoro">
         <h3>Tomato</h3>
     </div>
-
 </section>
 <section id="main">
-    <div id="main_weather">weather</div>
+
+    <button>refresh</button>
     <h1 class="title">Just Do It, JaY</h1>
     <h1 id="getToday"></h1>
-    <div id="dictionary">
-        <input />
-        <button />
+    <div id="dictionary" >
+        <input id="word" />
+        <button id="submit" onclick="showResult()">submit</button>
+        <p id="result"></p>
     </div>
 </section>
-<section id="quote">
-    <h3>Fair Weather Doesn't Make a Skillful Sailor</h3>
-</section>
+
 </div>
 <script src="index.js"></script>
 <script src="clock.js"></script>
+<script src="todo.js"></script>
 </body>
 </html>
