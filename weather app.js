@@ -33,14 +33,9 @@ function getWeather(){
 
         })
          .then(function () {
-             displayWeather();
          });
 }
-
-function displayWeather() {
-
-}
-
+getWeather()
 
 
 

@@ -18,8 +18,9 @@
 
 
 body{
-    margin: 0;
     background: url('img/background.jpg') no-repeat center fixed;
+    margin: 0;
+
 }
 
 #quote{
