@@ -18,8 +18,8 @@
 
 
 body{
+    background: url('img/background.jpg') no-repeat center fixed;
     margin: 0;
-    background-image: url("img/background.jpg")no-repeat center fixed ;
 
 }
 
