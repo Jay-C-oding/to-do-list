@@ -58,8 +58,6 @@ body{
 
 }
 
-
-
 #productivity_todo{
     position: absolute;
     top: 0;
@@ -246,14 +244,6 @@ i{
     text-align: center;
     vertical-align: middle;
 }
-.svg{
-    position: absolute;
-    top: 100px;
-    width: 100%;
-    text-align: center;
-    opacity: 0.65;
-    transition: all 1s ease;
-}
 
 .title{
     font-size: var(--font-large);
@@ -275,5 +265,3 @@ i{
     width: 100%;
     margin: 0;
 }
-
-

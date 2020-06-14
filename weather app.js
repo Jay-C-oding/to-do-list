@@ -13,11 +13,12 @@ async function myWeather() {
     const temp = data.main["temp"]
     const hum = data.main["humidity"]
 
-    myTemp.innerText = temp
-    myHum.innerText = hum
+    myTemp.innerText = Math.floor(temp)
+    myHum.innerText = Math.floor(hum)
 
+    let sec = 1000
     let minutes = sec*60
-    let second = 1000
+
 
     setInterval(myWeather, 15*minutes);
 
