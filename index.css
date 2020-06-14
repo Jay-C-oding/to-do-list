@@ -10,28 +10,50 @@
     --font-large: 70px;
     --font-regular: 28px;
     --font-quote: 24px;
-    --font-small: 13px
+    --font-small: 18px;
 
     /*font-family: 'Anton', sans-serif;
     font-family: 'Slabo 27px', serif;*/
 }
 
-html {
-    background: url('img/background.jpg') no-repeat center fixed;
-    background-size: 100vh, 100vm
-}
+
 body{
     margin: 0;
+    background: url('img/background.jpg') no-repeat center fixed;
+}
+
+#quote{
+    color: white;
+    font-size: var(--font-quote);
+    text-align: center;
+    vertical-align: bottom;
+    font-family: 'Slabo 27px', serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-top: 28px;
+}
+
+#main_weather{
+    font-size: var(--font-regular);
+    font-family: 'Slabo 27px', serif;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 28px 20px;
 }
 
 #productivity{
     position: sticky;
     width: 20%;
-
-}
-.box{
+    height: 100%;
     display: flex;
     flex-direction: column;
+
+}
+
+.box{
     min-height: 100vh;
     background-color: white;
     opacity: 40%;
@@ -44,33 +66,34 @@ body{
     font-family: 'Slabo 27px', serif;
     color: white;
     margin: 0;
-    padding: 0;
+    padding: 28px;
     box-sizing: border-box;
-    min-height: 100vh;
+    min-height: 60vh;
 }
-
 
 .todo-title{
     display: flex;
     justify-content: center;
     align-content: center;
-    margin-bottom: 5px;
-    margin-top: 28px;
+    margin: 0;
+    font-family: 'anton', sans-serif;
 }
 
 .todo-form{
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 5px;
+    padding: 7px;
 }
+
 .todoInput{
-    padding: 5px;
+    padding: 7px;
     border: none;
     background: white;
 }
+
 .todo_btn{
-    padding: 5px;
+    padding: 7px;
     background: white;
     color: #619196;
     cursor: pointer;
@@ -79,6 +102,7 @@ body{
     font-family: 'Slabo 27px', serif;
     border: none;
 }
+
 .todo_btn:hover{
     background: #619196;
     color: white;
@@ -88,24 +112,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
+
 ul.todoList{
     list-style: none;
     margin: 2px;
     padding: 0;
-    width: 200px;
-    height: 20px;
-
-
+    width: 250px;
+    height: 25px;
 }
+
 .todo-item{
     background: white;
     padding: 1px 10px;
     font-size: var(--font-small);
     color: #619196;
+    margin: 3px;
 }
+
 .todo{
     color: #619196;
     display: flex;
@@ -116,6 +140,8 @@ ul.todoList{
 
 .todo li{
     flex: 1;
+    font-size: var(--font-small);
+    font-family: 'Slabo 27px', serif;
 }
 
 .complete-btn{
@@ -126,8 +152,10 @@ ul.todoList{
     margin: 2px;
     z-index: +1;
     cursor: pointer;
+    font-family: 'Slabo 27px', serif;
 
 }
+
 .trash-btn{
     background: #DFC7C1;
     color: white;
@@ -136,33 +164,103 @@ ul.todoList{
     margin: 2px;
     z-index: +1;
     cursor: pointer;
+    font-family: 'Slabo 27px', serif;
 
 }
 
 .completed{
-    opacity: 0.5;
+    opacity: 0.45;
 }
 
 #productivity_pomodoro{
     position: absolute;
-    top: 45%;
+    top: 60%;
     width: 100%;
     font-size: var(--font-regular);
-    font-family: 'Slabo 27px', serif;
     color: white;
+    justify-content: center;
+    display: flex;
+    height: 40vh;
+    padding: 28px;
+    font-family: 'Slabo 27px', serif;
+    box-sizing: border-box
+
+}
+
+#pomodoro-title{
+    font-family: 'anton', sans-serif;
+    margin: 0;
+    height: 50px;
+
+}
+
+.timer-start{
+    border: none;
+    color: #619196;
+    background-color: white;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.timer-start:hover{
+    background-color: #619196;
+    color: white;
+}
+
+.pomo-timer{
+    position: absolute;
+    top: 70px;
+    width: 100%;
     text-align: center;
+    margin: 0;
+}
+
+.flag-section{
+    position: absolute;
+    top: 70px;
+    padding: 28px;
+    width: 100%;
+    box-sizing: border-box;
+    display: list-item;
+    list-style: none;
+
+}
+
+.complete-flag{
+    display: inline-block;
+    transition: all 1s ease;
+}
+
+i{
+    font-size: 36px;
+    padding: 5px;
+
+
+}
+
+#main{
+    text-align: center;
+}
+.svg{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    opacity: 0.65;
+    transition: all 1s ease;
 }
 
 
 .title{
     font-size: var(--font-large);
     color: white;
-    text-align: center;
     font-family: 'anton', sans-serif ;
     position: absolute;
     top: 35%;
     width: 100%;
-    opacity: 80%;
+    opacity: 90%;
     margin: 0;
 }
 #getToday{
@@ -172,30 +270,7 @@ ul.todoList{
     position: absolute;
     top: 50%;
     width: 100%;
-    text-align: center;
     margin: 0;
 }
-#quote{
-    color: white;
-    font-size: var(--font-quote);
-    text-align: center;
-    vertical-align: bottom;
-    font-family: 'Slabo 27px', serif;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-#main_weather{
-    font-size: var(--font-regular);
-    font-family: 'Slabo 27px', serif;
-    color: white;
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 28px 20px;
-}
-#pomodoro-title{
-    margin-top: 5px;
-    margin-bottom: 5px;
 
-}
+
