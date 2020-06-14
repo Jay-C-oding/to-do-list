@@ -36,7 +36,7 @@ body{
 }
 
 #main_weather{
-    font-size: var(--font-regular);
+    font-size: var(--font-small);
     font-family: 'Slabo 27px', serif;
     color: white;
     position: fixed;
@@ -46,7 +46,7 @@ body{
 }
 
 #temperature, #humidity{
-    font-size: var(--font-small);
+    font-size: var(--font-regular);
 }
 
 #productivity{
