@@ -6,7 +6,10 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My to do</title>
+    <title>North Star</title>
+    <meta name="description" content="my personal productivity app">
+    <meta name="author" content="Ja Young CHO">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Slabo+27px&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet">
@@ -14,12 +17,11 @@
 <body onload="startTime()" >
 <header>
     <q id="quote" cite="http://knottom.com/fair-weather-sailor/">Fair Weather Doesn't Make a Skillful Sailor</q>
-    <p id="main_weather">T:<span id="temperature"></span>
-        H:<span id="humidity"></span></p>
+    <p id="main_weather">T: <span id="temperature"></span>
+        H: <span id="humidity"></span></p>
 </header>
 <section id="productivity">
-    <div class="box"></div>
-    <aside id="productivity_todo">
+    <div id="productivity_todo">
         <h3 class="todo-title">To Do</h3>
         <form class="todo-form">
             <input class="todo-input"/>
@@ -28,29 +30,32 @@
         <div class="todoContainer">
             <ul class="todoList"></ul>
         </div>
-    </aside>
-    <aside id="productivity_pomodoro">
+    </div>
+    <div id="productivity_pomodoro">
         <h3 id="pomodoro-title">Pomodoro</h3>
         <button class="timer-start">Let's go!</button>
         <h5 class="pomo-timer"></h5>
         <div class="flag-section"></div>
-    </aside>
+    </div>
 </section>
 
 <section id="main">
     <button>refresh</button>
+
     <h1 class="title">Just Do It, JaY</h1>
     <h3 id="getToday"></h3>
-    <aside id="dictionary" >
-        <input id="word" />
-        <button id="submit" onclick="showResult()">submit</button>
-        <p id="result"></p>
-    </aside>
 </section>
+
+<aside id="dictionary" >
+    <input id="word" />
+    <button id="submit" onclick="showResult()">submit</button>
+    <p id="result"></p>
+</aside>
 
 <script src="index.js"></script>
 <script src="clock.js"></script>
 <script src="todo.js"></script>
 <script src="pomodoro.js"></script>
+<script src="weather%20app.js"></script>
 </body>
 </html>
