@@ -16,6 +16,7 @@ function startPomo() {
 
     function bgChange() {
         body.style.background = "url(img/newbg.jpg) no-repeat center fixed";
+        body.style.backgroundSize = 'cover';
     }
     bgChange()
 
@@ -50,6 +51,7 @@ function startPomo() {
 
             function bgChange() {
                 body.style.background = "url(img/background.jpg) no-repeat center fixed";
+                body.style.backgroundSize = 'cover';
 
             }
             bgChange()
