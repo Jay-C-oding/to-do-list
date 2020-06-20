@@ -238,7 +238,7 @@ ul.todoList{
 i{
     font-size: 36px;
     padding: 5px;
-    opacity: 75%;
+    opacity: 80%;
 
 }
 
@@ -287,7 +287,10 @@ i{
         width: 100%;
         color: white;
         position: fixed;
-        top: 5%;
+        top: 7%;
+    }
+    #productivity_todo{
+        padding: 10px;
     }
 
     #quote {
@@ -299,23 +302,33 @@ i{
     .title {
         font-size: 55px;
         position: fixed;
-        top: 50%;
+        top: 60%;
     }
 
     #getToday {
         position: fixed;
-        top: 55%;
+        top: 65%;
     }
 
     #main_weather {
         text-align: center;
         width: 100%;
         position: fixed;
-        top: 56%
+        top: 66%
     }
 
     #productivity_pomodoro {
         position: fixed;
-        top: 62%;
+        top: 72%;
+        padding: 10px;
+
+    }
+    .flag-section{
+        padding: 0px 50px;
+    }
+    i{
+        font-size: 36px;
+        padding: 10px;
+        opacity: 80%;
     }
 }
