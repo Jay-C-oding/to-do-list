@@ -9,7 +9,7 @@
 
     --font-large: 8vw;
     --font-regular: 24px;
-    --font-quote: 20px;
+    --font-quote: 30px;
     --font-small: 16px;
 
     /*font-family: 'Anton', sans-serif;
@@ -282,14 +282,35 @@ i{
 }
 
 @media only screen and (max-width: 600px){
+
     #productivity{
-        margin-top: 50px;
         width: 100%;
         color: white;
-        box-sizing: border-box;
+        position: fixed;
+        top: 5%;
     }
-    .title{
-        font-size: 55px;
+    #quote{
+        font-size: 20px;
+        margin-top: 10px;
+        position: flex;
     }
 
-}
+    .title{
+        font-size: 55px;
+        position: fixed;
+        top: 50%;
+    }
+    #getToday{
+        position: fixed;
+        top: 55%;
+    }
+    #main_weather{
+        text-align: center;
+        width: 100%;
+        position: fixed;
+        top: 56%
+    }
+    #productivity_pomodoro{
+        position: fixed;
+        top: 62%;
+    }
