@@ -314,7 +314,8 @@ i{
         text-align: center;
         width: 100%;
         position: fixed;
-        top: 66%
+        top: 68%;
+        margin: 0;
     }
 
     #productivity_pomodoro {
