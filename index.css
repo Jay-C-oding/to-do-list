@@ -281,36 +281,41 @@ i{
     opacity: 0.8;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 1000px) {
 
-    #productivity{
+    #productivity {
         width: 100%;
         color: white;
         position: fixed;
         top: 5%;
     }
-    #quote{
+
+    #quote {
         font-size: 20px;
         margin-top: 10px;
         position: flex;
     }
 
-    .title{
+    .title {
         font-size: 55px;
         position: fixed;
         top: 50%;
     }
-    #getToday{
+
+    #getToday {
         position: fixed;
         top: 55%;
     }
-    #main_weather{
+
+    #main_weather {
         text-align: center;
         width: 100%;
         position: fixed;
         top: 56%
     }
-    #productivity_pomodoro{
+
+    #productivity_pomodoro {
         position: fixed;
         top: 62%;
     }
+}
