@@ -20,7 +20,8 @@ async function myWeather() {
     let minutes = sec*60
 
 
-    setInterval(myWeather, 15*minutes);
+    myInterval = setInterval(myWeather, 15*minutes);
+
 
 }
 myWeather()

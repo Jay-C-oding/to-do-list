@@ -7,7 +7,7 @@
     --colour-blue: #82B4C8;
     --colour-deepgreen: #619196;
 
-    --font-large: 65px;
+    --font-large: 8vw;
     --font-regular: 24px;
     --font-quote: 20px;
     --font-small: 16px;
@@ -21,6 +21,8 @@ body{
     background: url('img/background.jpg') no-repeat center fixed;
     margin: 0;
     background-size: cover;
+    position: relative;
+    box-sizing: border-box;
 }
 
 #quote{
@@ -52,6 +54,7 @@ body{
 #productivity{
     position: sticky;
     width: 20%;
+    min-width: 320px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -68,7 +71,7 @@ body{
     margin: 0;
     padding: 28px;
     box-sizing: border-box;
-    min-height: 60vh;
+
 }
 
 .todo-title{
@@ -180,10 +183,9 @@ ul.todoList{
     color: white;
     justify-content: center;
     display: flex;
-    height: 40vh;
     padding: 28px;
     font-family: 'Slabo 27px', serif;
-    box-sizing: border-box
+    box-sizing: border-box;
 
 }
 
@@ -242,7 +244,6 @@ i{
 
 #main{
     text-align: center;
-    vertical-align: middle;
 }
 
 .title{
@@ -264,4 +265,31 @@ i{
     top: 60%;
     width: 100%;
     margin: 0;
+}
+
+#weekView{
+    font-size: var(--font-small);
+    font-family: 'anton', sans-serif;
+    color: white;
+    opacity: 0.6;
+    position: fixed;
+    bottom: 0;
+    box-sizing: content-box;
+}
+#myToday{
+    font-size: var(--font-regular);
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 600px){
+    #productivity{
+        margin-top: 50px;
+        width: 100%;
+        color: white;
+        box-sizing: border-box;
+    }
+    .title{
+        font-size: 55px;
+    }
+
 }
