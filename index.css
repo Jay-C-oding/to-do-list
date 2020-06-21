@@ -309,14 +309,14 @@ i{
 
     #getToday {
         position: fixed;
-        top: 63%;
+        top: 65%;
         width: 70%;
     }
 
     #main_weather {
         text-align: center;
         position: fixed;
-        top: 63%;
+        top: 65%;
         margin: 0;
         width: 50%;
     }
